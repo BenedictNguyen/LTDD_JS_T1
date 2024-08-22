@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Comparison</title>
+</head>
+
+<body>
+    <script>
+        let markMass = 78;
+        let markHeight = 1.75;
+
+        let johnMass = 92;
+        let johnHeight = 1.80;
+
+        // Function to calculate BMI
+        function calculateBMI(mass, height) {
+            return mass / (height * height);
+        }
+        let markBMI = calculateBMI(markMass, markHeight);
+        let johnBMI = calculateBMI(johnMass, johnHeight);
+        let markHigherBMI = markBMI > johnBMI;
+
+        // Create a message with the BMI values included
+        let message;
+        if (markHigherBMI) {
+            message = `Mark's BMI (${markBMI.toFixed(2)}) is higher than John's (${johnBMI.toFixed(2)})!`;
+        } else {
+            message = `John's BMI (${johnBMI.toFixed(2)}) is higher than Mark's (${markBMI.toFixed(2)})!`;
+        }
+        console.log(message);
+    </script>
+</body>
+
+</html>
