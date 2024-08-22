@@ -1,5 +1,5 @@
-const dolphinsScores = [10, 0, 2];
-const koalasScores = [90, 0, 0];
+const dolphinsScores = [90, 0, 20];
+const koalasScores = [100, 100, 210];
 
 // Hàm tính điểm trung bình 
 function calculateAverage(scores) {
